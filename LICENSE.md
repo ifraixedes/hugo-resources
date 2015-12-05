@@ -1,6 +1,6 @@
 The MIT License
 
-Copyright (c) 2015 Ivan Fraixedes <ivan@fraixed.es>
+Copyright (c) 2015 [Ivan Fraixedes](http://ivan.fraixed.es) / <a href="mailto: ivan@fraixed.es">contact</a>
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the

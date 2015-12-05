@@ -28,4 +28,4 @@ I'm happy to add any resource to this repo, fix any bug and try to implement any
 
 ## License
 
-The MIT license check LICENSE file for more information.
+MIT read [LICENSE file](https://github.com/ifraixedes/hugo-resources/blob/master/LICENSE.md) for more information
