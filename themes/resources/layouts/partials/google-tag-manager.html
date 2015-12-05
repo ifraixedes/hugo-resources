@@ -1,5 +1,5 @@
 {{if eq (len (getenv "HUGO_DEV")) 0 }}
-<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-58ZW3J"
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id={{.Site.Params.google_tag_manager}}"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
