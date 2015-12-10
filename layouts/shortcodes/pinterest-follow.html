@@ -1,0 +1,7 @@
+{{ if .IsNamedParams }}
+	<a data-pin-do="buttonFollow" href="https://www.pinterest.com/{{ .Get "username" }}/">{{ if .Get "fullname" }}{{ .Get "fullname" }}{{ else }}{{ .Get "username" }}{{ end }}</a>
+	<script async defer src="//assets.pinterest.com/js/pinit.js"></script>
+{{ else }}
+	<a data-pin-do="buttonFollow" href="https://www.pinterest.com/{{ .Get 0 }}/">{{ .Get 0 }}</a>
+	<script async defer src="//assets.pinterest.com/js/pinit.js"></script>
+{{ end }}

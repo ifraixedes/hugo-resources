@@ -1,0 +1,9 @@
+{{ if .IsNamedParams }}
+	<a href="https://twitter.com/intent/tweet?screen_name={{ .Get "username" }}{{ with .Get "text" }}&text={{.}}{{ end }}" class="twitter-mention-button" {{ if .Get "large" | eq "true" }}data-size="large"{{ end }} {{ with .Get "rec" }}data-related="{{.}}"{{ end }}>Tweet to @{{ .Get "username" }}</a>
+	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+{{ else }}
+	<a href="https://twitter.com/intent/tweet?screen_name={{ .Get 0 }}" class="twitter-mention-button">Tweet to @{{ .Get 0 }}</a>
+	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+{{ end }}
+
+

@@ -1,0 +1,9 @@
+{{ if .IsNamedParams }}
+	<a href="https://twitter.com/intent/tweet?button_hashtag={{ .Get "hashtag" }}{{ with .Get "text" }}&text={{.}}{{ end }}" class="twitter-hashtag-button" {{ if .Get "large" | eq "true" }}data-size="large"{{ end }} {{ with .Get "rec" }}data-related="{{.}}"{{ end }} {{ with .Get "url" }}data-url="{{.}}"{{ end }}>Tweet #{{ .Get "hashtag" }}</a>
+	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+{{ else }}
+	<a href="https://twitter.com/intent/tweet?button_hashtag={{ .Get 0 }}" class="twitter-hashtag-button">Tweet #{{ .Get 0 }}</a>
+	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+{{ end }}
+
+

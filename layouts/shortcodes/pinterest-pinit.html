@@ -1,0 +1,8 @@
+{{ if .IsNamedParams }}
+	<a data-pin-do="buttonPin" {{ if .Get "large" | eq "true" }}data-pin-tall="true"{{ end }} href="https://www.pinterest.com/pin/create/button/?url={{ if .Get "url" }}{{ .Get "url" }}{{ else }}{{ .Permalink }}{{ end }}&media={{ if .Get "media" }}{{ .Get "media" }}{{ else }}{{ .Site.BaseURL }}img/pinterest-share.jpg{{ end }}&description={{ if .Get "description"}}{{ .Get "description" }}{{else}}{{ if eq .Site.Title .Title }}{{ .Site.Title }}{{ else }}{{ .Title }} -- {{ .Site.Title }}{{ end }}{{ end }}" data-pin-color="{{ if .Get "color" }}{{ .Get "color" }}{{ else }}red{{end}}"></a>
+	<script async defer src="//assets.pinterest.com/js/pinit.js"></script>
+{{ else }}
+	<a data-pin-do="buttonFollow" href="https://www.pinterest.com/{{ .Get 0 }}/">{{ .Get 0 }}</a>
+	<a data-pin-do="buttonPin" data-pin-color="red" href="https://www.pinterest.com/pin/create/button/?url={{ .Permalink }}&media={{ if .Get 0 }}{{ .Get 0 }}{{ else }}{{ .Site.BaseURL }}img/pinterest-share.jpg{{ end }}&description={{ if eq .Site.Title .Title }}{{ .Site.Title }}{{ else }}{{ .Title }} -- {{ .Site.Title }}{{ end }}"><img src="//assets.pinterest.com/images/pidgets/pinit_fg_en_rect_red_20.png" /></a>
+	<script async defer src="//assets.pinterest.com/js/pinit.js"></script>
+{{ end }}
