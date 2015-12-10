@@ -1,7 +1,7 @@
 baseurl = "http://replace-this-with-your-hugo-site.com/"
 languageCode = "en-us"
-title = "My New Hugo Site"
-GoogleAnalytics = "XX-00000000-0"
+title = "Hugo Resources"
+googleAnalytics = "XX-00000000-0"
 
 [params]
   google_tag_manager = "GMT-XXXXX"
