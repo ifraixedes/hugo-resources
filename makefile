@@ -16,5 +16,8 @@ dev-prod: clean
 		hugo server -wD -d dev ;\
 	fi
 
+gen-gh-pages: clean
+	hugo -t resources -d gh-pages;\
+
 clean:
-	rm -rf public dev
+	rm -rf gh-pages .tmp
