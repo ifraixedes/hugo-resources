@@ -1,8 +1,8 @@
-baseurl = "http://replace-this-with-your-hugo-site.com/"
+baseurl = "http://ivan.fraixed.es/hugo-resources"
 languageCode = "en-us"
 title = "Hugo Resources"
 pygmentsstyle = "tango"
-googleAnalytics = "XX-00000000-0"
+googleAnalytics = "UA-54405610-5"
 
 [params]
   google_tag_manager = "GMT-XXXXX"
