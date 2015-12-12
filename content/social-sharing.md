@@ -3,13 +3,13 @@ date = "2015-12-10T08:20:31Z"
 title = "Social Sharing Shortcodes"
 +++
 
-In this page you can see the available social sharing shortcodes showing a live exeample and code sample.
+In this page you can see the available social sharing shortcodes showing a live example and code sample.
 
 
 ## Facebook share button
 Render a Facebook share button, like {{<facebook-share "example.com">}}
 
-It has only one positional parameters an is optional; the default is `page URL` value.
+It has only one positional parameter and is optional; the default is `page URL` value.
 
 {{<highlight go>}}
   <!-- No parameter, so the page url will be used-->
@@ -19,12 +19,12 @@ It has only one positional parameters an is optional; the default is `page URL` 
 {{</highlight>}}
 
 ## Pinterest follow button
-Render a Pinterest flollow button, like {{<pinterest-follow username="ifraixedes" fullname="Ivan Fraixedes">}}
+Render a Pinterest follow button, like {{<pinterest-follow username="ifraixedes" fullname="Ivan Fraixedes">}}
 
 It has several named parameters:
 
 * username: The username to follow.
-* fullname (optional): The text to use inside the button; it uses "username" paramters by default.
+* fullname (optional): The text to use inside the button; it uses "username" parameters by default.
 
 {{<highlight go>}}
   <!-- Using only username -->
@@ -40,8 +40,8 @@ It has several named parameters:
 
 * media: The absolute URL to the image to pin.
 * url (optional): The absolute URL to reference the image to pin. Default is `page URL` value.
-* large (optional): Use a large button. Default is `fase`.
-* description (optional): The desciption for the image to pin. Default to string composed by `page title - site title` if they aren't equal otherwise `page title`.
+* large (optional): Use a large button. Default is `false`.
+* description (optional): The description for the image to pin. Default to string composed by `page title - site title` if they aren't equal otherwise `page title`.
 * color (optional): The color of the button that Pinterest has available. Default to `red`.
 
 {{<highlight go>}}
@@ -75,35 +75,35 @@ Render a Twitter hashtag button, like {{<twitter-hashtag hashtag="hugo" text="Hu
 It has several named parameters:
 
 * hashtag: The hashtag, without '#', to populate in the tweet.
-* hashtags (optional): A comma-separated list of additional hashtags omiting preceding '#' from each one. Default none.
-* text (optional): The extra text to popluate in the tweet. Default none.
-* related (optional): Related additional usernames with an optional description, [read documenation about in twitter docs](https://dev.twitter.com/web/tweet-button/web-intent). Default none.
+* hashtags (optional): A comma-separated list of additional hashtags omitting preceding '#' from each one. Default none.
+* text (optional): The extra text to populate in the tweet. Default none.
+* related (optional): Related additional usernames with an optional description, [read documentation about in twitter docs](https://dev.twitter.com/web/tweet-button/web-intent). Default none.
 * url (optional): The url to reference. Default to `page URL`.
 * large (optional): Show large button. Set to "true" show in large, otherwise in normal size.
 
 
 {{<highlight go>}}
-  <!-- Twitter button with popluated text, additional hashtags and related information -->
+  <!-- Twitter button with populated text, additional hashtags and related information -->
  {{<go-tpl>}}<twitter-hashtag hashtag="hugo" text="Hugo resources" hashtags="blog,golang" related="#golang">{{</go-tpl>}}
   <!-- Twitter button with the only required parameter -->
   {{<go-tpl>}}<twitter-hashtag hashtag="hugo">{{</go-tpl>}}
 {{</highlight>}}
 
 ## Twitter mention button
-Render a Twitter mention button, like {{<twitter-mention username="ifraixedes" text="Hugo resources" hashtags="hugo" related="@golang">}}
+Render a Twitter mention button, like {{<twitter-mention username="ifraixedes" text="Hugo resources" hashtags="hugo" related="golang">}}
 
 It has several named parameters:
 
 * username: The username to mention.
-* hashtags (optional): A comma-separated list of additional hashtags omiting preceding '#' from each one. Default none.
-* text (optional): The extra text to popluate in the tweet. Default none.
-* related (optional): Related additional usernames with an optional description, [read documenation about in twitter docs](https://dev.twitter.com/web/tweet-button/web-intent). Default none.
+* hashtags (optional): A comma-separated list of additional hashtags omitting preceding '#' from each one. Default none.
+* text (optional): The extra text to populate in the tweet. Default none.
+* related (optional): Related additional usernames with an optional description, [read documentation about in twitter docs](https://dev.twitter.com/web/tweet-button/web-intent). Default none.
 * url (optional): The url to reference. Default to `page URL`.
 * large (optional): Show large button. Set to "true" show in large, otherwise in normal size.
 
 {{<highlight go>}}
-  <!-- Twitter button with popluated text and related usernames -->
- {{<go-tpl>}}<twitter-mention username="brody_berson" text="Hugo resources" related="@golang">{{</go-tpl>}}
+  <!-- Twitter button with populated text and related usernames -->
+ {{<go-tpl>}}<twitter-mention username="brody_berson" text="Hugo resources" related="golang">{{</go-tpl>}}
   <!-- Twitter button with the only required parameter -->
   {{<go-tpl>}}<twitter-mention username="brody_berson">{{</go-tpl>}}
 {{</highlight>}}
@@ -115,14 +115,14 @@ Render a Twitter share button, like {{<twitter-share via="ifraixedes" text="A bu
 It has several named parameters:
 
 * via: The twitter username to attribute the source of the tweet.
-* hashtags (optional): A comma-separated list of additional hashtags omiting preceding '#' from each one. Default none.
-* text (optional): The extra text to popluate in the tweet. Default none.
+* hashtags (optional): A comma-separated list of additional hashtags omitting preceding '#' from each one. Default none.
+* text (optional): The extra text to populate in the tweet. Default none.
 * url (optional): The url to reference. Default to `page URL`.
-* related (optional): Related additional usernames with an optional description, [read documenation about in twitter docs](https://dev.twitter.com/web/tweet-button/web-intent). Default none.
+* related (optional): Related additional usernames with an optional description, [read documentation about in twitter docs](https://dev.twitter.com/web/tweet-button/web-intent). Default none.
 * large (optional): Show large button. Set to "true" show in large, otherwise in normal size.
 
 {{<highlight go>}}
-  <!-- Twitter button with popluated text and hashtags -->
+  <!-- Twitter button with populated text and hashtags -->
  {{<go-tpl>}}<twitter-share via="ifraixedes" text="Hugo resources" hashtags="hugo,golang">{{</go-tpl>}}
   <!-- Twitter button with the only required parameter -->
   {{<go-tpl>}}<twitter-share via="brody_berson">{{</go-tpl>}}
