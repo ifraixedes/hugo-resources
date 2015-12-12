@@ -39,16 +39,16 @@ Render a Pinterest pin it button, like {{<pinterest-pinit media="https://gohugo.
 It has several named parameters:
 
 * media: The absolute URL to the image to pin.
-* url (optional): The absolute URL to reference the image to pin. Default is `page URL` value.
+* url (optional): The absolute URL to pages which contains the image to pin. Default is `page URL` value.
 * large (optional): Use a large button. Default is `false`.
 * description (optional): The description for the image to pin. Default to string composed by `page title - site title` if they aren't equal otherwise `page title`.
 * color (optional): The color of the button that Pinterest has available. Default to `red`.
 
 {{<highlight go>}}
   <!-- Using lage button an description -->
-  {{<go-tpl>}}<pinterest-pinit url="https://gohugo.io/img/hugo.png" large="true" description="This an example of a hugo shortcode for Pinterest Pin Button">{{</go-tpl>}}
+  {{<go-tpl>}}<pinterest-pinit media="https://gohugo.io/img/hugo.png" large="true" description="This an example of a hugo shortcode for Pinterest Pin Button">{{</go-tpl>}}
   <!-- Changing the color  -->
-  {{<go-tpl>}}<pinterest-pinit url="https://gohugo.io/img/hugo.png" color="grey">{{</go-tpl>}}
+  {{<go-tpl>}}<pinterest-pinit media="https://gohugo.io/img/hugo.png" color="grey">{{</go-tpl>}}
 {{</highlight>}}
 
 ## Twitter follow button
