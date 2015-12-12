@@ -1,6 +1,7 @@
 baseurl = "http://replace-this-with-your-hugo-site.com/"
 languageCode = "en-us"
 title = "Hugo Resources"
+pygmentsstyle = "tango"
 googleAnalytics = "XX-00000000-0"
 
 [params]
