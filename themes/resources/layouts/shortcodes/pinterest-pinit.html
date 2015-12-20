@@ -1,2 +1,7 @@
-<a data-pin-do="buttonPin" {{ if eq (.Get "large") "true" }}data-pin-tall="true"{{ end }} href="https://www.pinterest.com/pin/create/button/?url={{ if .Get "url" }}{{ .Get "url" }}{{ else }}{{ .Page.Permalink }}{{ end }}&media={{ .Get "media" }}&description={{ if .Get "description"}}{{ .Get "description" }}{{else}}{{ if eq .Page.Site.Title .Page.Title }}{{ .Page.Site.Title }}{{ else }}{{ .Page.Title }} -- {{ .Page.Site.Title }}{{ end }}{{ end }}" data-pin-color="{{ if .Get "color" }}{{ .Get "color" }}{{ else }}red{{end}}"></a>
-<script async defer src="//assets.pinterest.com/js/pinit.js"></script>
+{{if .IsNamedParams}}
+  <a data-pin-do="buttonPin" {{if eq (.Get "large") "true"}}data-pin-tall="true"{{end}} href="https://www.pinterest.com/pin/create/button/?url={{if .Get "url"}}{{.Get "url"}}{{else}}{{.Page.Permalink}}{{end}}&media={{.Get "media"}}&description={{if .Get "description"}}{{.Get "description"}}{{else}}{{if eq .Page.Site.Title .Page.Title}}{{.Page.Site.Title}}{{else}}{{.Page.Title}} -- {{.Page.Site.Title}}{{end}}{{end}}" data-pin-color="{{if .Get "color"}}{{.Get "color"}}{{else}}red{{end}}"></a>
+  <script async defer src="//assets.pinterest.com/js/pinit.js"></script>
+{{else}}
+  <a data-pin-do="buttonPin" href="https://www.pinterest.com/pin/create/button/?url={{.Page.Permalink}}&media={{.Get 0}}&description={{if eq .Page.Site.Title .Page.Title}}{{.Page.Site.Title}}{{else}}{{.Page.Title}} -- {{.Page.Site.Title}}{{end}}" data-pin-color="red"></a>
+  <script async defer src="//assets.pinterest.com/js/pinit.js"></script>
+{{end}}

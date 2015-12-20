@@ -9,7 +9,4 @@
 }(document, 'script', 'facebook-jssdk'));</script>
 
 <!-- Your share button code -->
-<div class="fb-share-button"
-	data-href="{{ if .Get 0 }}{{ .Get 0 }}{{ else }}{{ .Page.Permalink }}{{ end }}"
-	data-layout="button_count">
-</div>
+<div class="fb-share-button" data-href="{{ if .Get 0 }}{{ .Get 0 }}{{ else }}{{ .Page.Permalink }}{{ end }}"data-layout="button_count"></div>

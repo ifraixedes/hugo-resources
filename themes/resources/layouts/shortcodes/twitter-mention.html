@@ -1,3 +1,8 @@
-<a href="https://twitter.com/intent/tweet?screen_name={{ .Get "username" }}{{ with .Get "text" }}&text={{.}}{{ end }}" data-url="{{if eq (.Get "url") ""}}{{.Page.Permalink}}{{else}}{{.Get "url"}}{{end}}" class="twitter-mention-button" {{with .Get "hashtags"}}data-hashtags="{{.}}"{{end}} {{if eq (.Get "large") "true"}}data-size="large"{{end}} {{with .Get "related"}}data-related="{{.}}"{{end}}>Tweet to @{{ .Get "username" }}</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+{{if .IsNamedParams}}
+  <a href="https://twitter.com/intent/tweet?screen_name={{.Get "username"}}{{with .Get "text"}}&text={{.}}{{end}}" data-url="{{if eq (.Get "url") ""}}{{.Page.Permalink}}{{else}}{{.Get "url"}}{{end}}" class="twitter-mention-button" {{with .Get "hashtags"}}data-hashtags="{{.}}"{{end}} {{if eq (.Get "large") "true"}}data-size="large"{{end}} {{with .Get "related"}}data-related="{{.}}"{{end}}>Tweet to @{{.Get "username"}}</a>
+  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+{{else}}
+  <a href="https://twitter.com/intent/tweet?screen_name={{.Get 0}}" data-url="{{.Page.Permalink}}" class="twitter-mention-button">Tweet to @{{.Get 0}}</a>
+  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+{{end}}
 

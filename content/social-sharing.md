@@ -26,11 +26,15 @@ It has several named parameters:
 * username: The username to follow.
 * fullname (optional): The text to use inside the button; it uses "username" parameters by default.
 
+Optionally you can also used with the single required parameter (`username`) as a positional parameter.
+
 {{<highlight go>}}
   <!-- Using only username -->
   {{<go-tpl>}}<pinterest-follow username="ifraixedes">{{</go-tpl>}}
   <!-- Using the url passed as a parameter  -->
   {{<go-tpl>}}<pinterest-follow username="golang" fullname="Go">{{</go-tpl>}}
+  <!-- Using it with the positional single username required parameter -->
+  {{<go-tpl>}}<pinterest-follow "golang">{{</go-tpl>}}
 {{</highlight>}}
 
 ## Pinterest pin it button
@@ -44,11 +48,15 @@ It has several named parameters:
 * description (optional): The description for the image to pin. Default to string composed by `page title - site title` if they aren't equal otherwise `page title`.
 * color (optional): The color of the button that Pinterest has available. Default to `red`.
 
+Optionally you can also used with the single required parameter (`media`) as a positional parameter.
+
 {{<highlight go>}}
   <!-- Using lage button an description -->
   {{<go-tpl>}}<pinterest-pinit media="https://gohugo.io/img/hugo.png" large="true" description="This an example of a hugo shortcode for Pinterest Pin Button">{{</go-tpl>}}
   <!-- Changing the color  -->
   {{<go-tpl>}}<pinterest-pinit media="https://gohugo.io/img/hugo.png" color="grey">{{</go-tpl>}}
+  <!-- Using it with the positional single media required parameter -->
+  {{<go-tpl>}}<pinterest-pinit "https://gohugo.io/img/hugo.png">{{</go-tpl>}}
 {{</highlight>}}
 
 ## Twitter follow button
@@ -61,12 +69,15 @@ It has several named parameters:
 * show-name (optional): Show username in the button. Set to "true" it's shown otherwise __not shown__. Default not shown.
 * large (optional): Show large button. Set to "true" show in large, otherwise in normal size.
 
+Optionally you can also used with the single required parameter (`username`) as a positional parameter.
 
 {{<highlight go>}}
   <!-- Twitter large size button showing with username, number of followers-->
   {{<go-tpl>}}<twitter-follow username="brody_berson" large="true" show-count="true" show-name="true">{{</go-tpl>}}
   <!-- Twitter standard size button with the only required parameter -->
   {{<go-tpl>}}<twitter-follow username="brody_berson">{{</go-tpl>}}
+  <!-- Using it with the positional single username required parameter -->
+  {{<go-tpl>}}<twitter-follow "ifraixedes">{{</go-tpl>}}
 {{</highlight>}}
 
 ## Twitter hashtag button
@@ -81,12 +92,15 @@ It has several named parameters:
 * url (optional): The url to reference. Default to `page URL`.
 * large (optional): Show large button. Set to "true" show in large, otherwise in normal size.
 
+Optionally you can also used with the single required parameter (`hashtag`) as a positional parameter.
 
 {{<highlight go>}}
   <!-- Twitter button with populated text, additional hashtags and related information -->
  {{<go-tpl>}}<twitter-hashtag hashtag="hugo" text="Hugo resources" hashtags="blog,golang" related="#golang">{{</go-tpl>}}
   <!-- Twitter button with the only required parameter -->
   {{<go-tpl>}}<twitter-hashtag hashtag="hugo">{{</go-tpl>}}
+  <!-- Using it with the positional single hashtag required parameter -->
+  {{<go-tpl>}}<twitter-hashtag "hugo">{{</go-tpl>}}
 {{</highlight>}}
 
 ## Twitter mention button
@@ -101,11 +115,15 @@ It has several named parameters:
 * url (optional): The url to reference. Default to `page URL`.
 * large (optional): Show large button. Set to "true" show in large, otherwise in normal size.
 
+Optionally you can also used with the single required parameter (`username`) as a positional parameter.
+
 {{<highlight go>}}
   <!-- Twitter button with populated text and related usernames -->
  {{<go-tpl>}}<twitter-mention username="brody_berson" text="Hugo resources" related="golang">{{</go-tpl>}}
   <!-- Twitter button with the only required parameter -->
   {{<go-tpl>}}<twitter-mention username="brody_berson">{{</go-tpl>}}
+  <!-- Using it with the positional single username required parameter -->
+  {{<go-tpl>}}<twitter-mention "ifraixedes">{{</go-tpl>}}
 {{</highlight>}}
 
 
@@ -121,10 +139,14 @@ It has several named parameters:
 * related (optional): Related additional usernames with an optional description, [read documentation about in twitter docs](https://dev.twitter.com/web/tweet-button/web-intent). Default none.
 * large (optional): Show large button. Set to "true" show in large, otherwise in normal size.
 
+Optionally you can also used with the single required parameter (`via`) as a positional parameter.
+
 {{<highlight go>}}
   <!-- Twitter button with populated text and hashtags -->
  {{<go-tpl>}}<twitter-share via="ifraixedes" text="Hugo resources" hashtags="hugo,golang">{{</go-tpl>}}
   <!-- Twitter button with the only required parameter -->
   {{<go-tpl>}}<twitter-share via="brody_berson">{{</go-tpl>}}
+  <!-- Using it with the positional single via required parameter -->
+  {{<go-tpl>}}<twitter-share "ifraixedes">{{</go-tpl>}}
 {{</highlight>}}
 
