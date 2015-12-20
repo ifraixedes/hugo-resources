@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <meta property="og:url"           content="" />
+    <meta property="og:type"          content="website" />
+    <meta property="og:title"         content="" />
+    <meta property="og:description"   content="Your description" />
+    <meta property="og:image"         content="http://www.your-domain.com/path/image.jpg" />
+  </head>
+
+<body>
+  <h1>Social Sharing Shortcodes</h1>
+  
+
+<p>In this page you can see the available social sharing shortcodes showing a live example and code sample.</p>
+
+<h2 id="facebook-share-button:89e43e7b944c916f0e4ced1926fc907b">Facebook share button</h2>
+
+<p>Render a Facebook share button, like 
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+<div class="fb-share-button" data-href="example.com"data-layout="button_count"></div>
+</p>
+
+<p>It has only one positional parameter and is optional; the default is <code>page URL</code> value.</p>
+
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%">  <span style="color: #000000; font-weight: bold">&lt;!</span><span style="color: #ce5c00; font-weight: bold">--</span> <span style="color: #000000">No</span> <span style="color: #000000">parameter</span><span style="color: #000000; font-weight: bold">,</span> <span style="color: #000000">so</span> <span style="color: #000000">the</span> <span style="color: #000000">page</span> <span style="color: #000000">url</span> <span style="color: #000000">will</span> <span style="color: #000000">be</span> <span style="color: #000000">used</span><span style="color: #ce5c00; font-weight: bold">--</span><span style="color: #000000; font-weight: bold">&gt;</span>
+  <span style="color: #000000; font-weight: bold">{{&lt;</span><span style="color: #000000">facebook</span><span style="color: #ce5c00; font-weight: bold">-</span><span style="color: #000000">share</span><span style="color: #000000; font-weight: bold">&gt;}}</span>
+
+  <span style="color: #000000; font-weight: bold">&lt;!</span><span style="color: #ce5c00; font-weight: bold">--</span> <span style="color: #000000">Using</span> <span style="color: #000000">the</span> <span style="color: #000000">url</span> <span style="color: #000000">passed</span> <span style="color: #000000">as</span> <span style="color: #000000">a</span> <span style="color: #000000">parameter</span>  <span style="color: #ce5c00; font-weight: bold">--</span><span style="color: #000000; font-weight: bold">&gt;</span>
+  <span style="color: #000000; font-weight: bold">{{&lt;</span><span style="color: #000000">facebook</span><span style="color: #ce5c00; font-weight: bold">-</span><span style="color: #000000">share</span> <span style="color: #4e9a06">&quot;http://example.com&quot;</span><span style="color: #000000; font-weight: bold">&gt;}}</span>
+</pre></div>
+
+
+<h2 id="pinterest-follow-button:89e43e7b944c916f0e4ced1926fc907b">Pinterest follow button</h2>
+
+<p>Render a Pinterest follow button, like 
+  <a data-pin-do="buttonFollow" href="https://www.pinterest.com/ifraixedes/">Ivan Fraixedes</a>
+  <script async defer src="//assets.pinterest.com/js/pinit.js"></script>
+
+</p>
+
+<p>It has several named parameters:</p>
+
+<ul>
+<li>username: The username to follow.</li>
+<li>fullname (optional): The text to use inside the button; it uses &ldquo;username&rdquo; parameters by default.</li>
+</ul>
+
+<p>Optionally you can also used with the single required parameter (<code>username</code>) as a positional parameter.</p>
+
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%">  <span style="color: #000000; font-weight: bold">&lt;!</span><span style="color: #ce5c00; font-weight: bold">--</span> <span style="color: #000000">Using</span> <span style="color: #000000">only</span> <span style="color: #000000">username</span> <span style="color: #ce5c00; font-weight: bold">--</span><span style="color: #000000; font-weight: bold">&gt;</span>
+  <span style="color: #000000; font-weight: bold">{{&lt;</span><span style="color: #000000">pinterest</span><span style="color: #ce5c00; font-weight: bold">-</span><span style="color: #000000">follow</span> <span style="color: #000000">username</span><span style="color: #000000; font-weight: bold">=</span><span style="color: #4e9a06">&quot;ifraixedes&quot;</span><span style="color: #000000; font-weight: bold">&gt;}}</span>
+
+  <span style="color: #000000; font-weight: bold">&lt;!</span><span style="color: #ce5c00; font-weight: bold">--</span> <span style="color: #000000">Using</span> <span style="color: #000000">the</span> <span style="color: #000000">url</span> <span style="color: #000000">passed</span> <span style="color: #000000">as</span> <span style="color: #000000">a</span> <span style="color: #000000">parameter</span>  <span style="color: #ce5c00; font-weight: bold">--</span><span style="color: #000000; font-weight: bold">&gt;</span>
+  <span style="color: #000000; font-weight: bold">{{&lt;</span><span style="color: #000000">pinterest</span><span style="color: #ce5c00; font-weight: bold">-</span><span style="color: #000000">follow</span> <span style="color: #000000">username</span><span style="color: #000000; font-weight: bold">=</span><span style="color: #4e9a06">&quot;golang&quot;</span> <span style="color: #000000">fullname</span><span style="color: #000000; font-weight: bold">=</span><span style="color: #4e9a06">&quot;Go&quot;</span><span style="color: #000000; font-weight: bold">&gt;}}</span>
+
+  <span style="color: #000000; font-weight: bold">&lt;!</span><span style="color: #ce5c00; font-weight: bold">--</span> <span style="color: #000000">Using</span> <span style="color: #000000">it</span> <span style="color: #000000">with</span> <span style="color: #000000">the</span> <span style="color: #000000">positional</span> <span style="color: #000000">single</span> <span style="color: #000000">username</span> <span style="color: #000000">required</span> <span style="color: #000000">parameter</span> <span style="color: #ce5c00; font-weight: bold">--</span><span style="color: #000000; font-weight: bold">&gt;</span>
+  <span style="color: #000000; font-weight: bold">{{&lt;</span><span style="color: #000000">pinterest</span><span style="color: #ce5c00; font-weight: bold">-</span><span style="color: #000000">follow</span> <span style="color: #4e9a06">&quot;golang&quot;</span><span style="color: #000000; font-weight: bold">&gt;}}</span>
+</pre></div>
+
+
+<h2 id="pinterest-pin-it-button:89e43e7b944c916f0e4ced1926fc907b">Pinterest pin it button</h2>
+
+<p>Render a Pinterest pin it button, like 
+  <a data-pin-do="buttonPin"  href="https://www.pinterest.com/pin/create/button/?url=http%3a%2f%2fivan.fraixed.es%2fhugo-resources%2fsocial-sharing%2f&media=https%3a%2f%2fgohugo.io%2fimg%2fhugo.png&description=Social%20Sharing%20Shortcodes -- Hugo%20Resources" data-pin-color="red"></a>
+  <script async defer src="//assets.pinterest.com/js/pinit.js"></script>
+
+</p>
+
+<p>It has several named parameters:</p>
+
+<ul>
+<li>media: The absolute URL to the image to pin.</li>
+<li>url (optional): The absolute URL to pages which contains the image to pin. Default is <code>page URL</code> value.</li>
+<li>large (optional): Use a large button. Default is <code>false</code>.</li>
+<li>description (optional): The description for the image to pin. Default to string composed by <code>page title - site title</code> if they aren&rsquo;t equal otherwise <code>page title</code>.</li>
+<li>color (optional): The color of the button that Pinterest has available. Default to <code>red</code>.</li>
+</ul>
+
+<p>Optionally you can also used with the single required parameter (<code>media</code>) as a positional parameter.</p>
+
+<p><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%">  <span style="color: #000000; font-weight: bold">&lt;!</span><span style="color: #ce5c00; font-weight: bold">--</span> <span style="color: #000000">Using</span> <span style="color: #000000">lage</span> <span style="color: #000000">button</span> <span style="color: #000000">an</span> <span style="color: #000000">description</span> <span style="color: #ce5c00; font-weight: bold">--</span><span style="color: #000000; font-weight: bold">&gt;</span>
+  <span style="color: #000000; font-weight: bold">{{&lt;</span><span style="color: #000000">pinterest</span><span style="color: #ce5c00; font-weight: bold">-</span><span style="color: #000000">pinit</span> <span style="color: #000000">media</span><span style="color: #000000; font-weight: bold">=</span><span style="color: #4e9a06">&quot;https://gohugo.io/img/hugo.png&quot;</span> <span style="color: #000000">large</span><span style="color: #000000; font-weight: bold">=</span><span style="color: #4e9a06">&quot;true&quot;</span> <span style="color: #000000">description</span><span style="color: #000000; font-weight: bold">=</span><span style="color: #4e9a06">&quot;This an example of a hugo shortcode for Pinterest Pin Button&quot;</span><span style="color: #000000; font-weight: bold">&gt;}}</span>
+
+  <span style="color: #000000; font-weight: bold">&lt;!</span><span style="color: #ce5c00; font-weight: bold">--</span> <span style="color: #000000">Changing</span> <span style="color: #000000">the</span> <span style="color: #000000">color</span>  <span style="color: #ce5c00; font-weight: bold">--</span><span style="color: #000000; font-weight: bold">&gt;</span>
+  <span style="color: #000000; font-weight: bold">{{&lt;</span><span style="color: #000000">pinterest</span><span style="color: #ce5c00; font-weight: bold">-</span><span style="color: #000000">pinit</span> <span style="color: #000000">media</span><span style="color: #000000; font-weight: bold">=</span><span style="color: #4e9a06">&quot;https://gohugo.io/img/hugo.png&quot;</span> <span style="color: #000000">color</span><span style="color: #000000; font-weight: bold">=</span><span style="color: #4e9a06">&quot;grey&quot;</span><span style="color: #000000; font-weight: bold">&gt;}}</span>
+
+  <span style="color: #000000; font-weight: bold">&lt;!</span><span style="color: #ce5c00; font-weight: bold">--</span> <span style="color: #000000">Using</span> <span style="color: #000000">it</span> <span style="color: #000000">with</span> <span style="color: #000000">the</span> <span style="color: #000000">positional</span> <span style="color: #000000">single</span> <span style="color: #000000">media</span> <span style="color: #000000">required</span> <span style="color: #000000">parameter</span> <span style="color: #ce5c00; font-weight: bold">--</span><span style="color: #000000; font-weight: bold">&gt;</span>
+  <span style="color: #000000; font-weight: bold">{{&lt;</span><span style="color: #000000">pinterest</span><span style="color: #ce5c00; font-weight: bold">-</span><span style="color: #000000">pinit</span> <span style="color: #4e9a06">&quot;https://gohugo.io/img/hugo.png&quot;</span><span style="color: #000000; font-weight: bold">&gt;}}</span>
+</pre></div>
+</p>
+
+<h2 id="twitter-follow-button:89e43e7b944c916f0e4ced1926fc907b">Twitter follow button</h2>
+
+<p>Render a Twitter button, like 
+  <a href="https://twitter.com/brody_berson" class="twitter-follow-button" data-show-count="true" data-show-screen-name="true" data-size="large">Follow @brody_berson</a>
+  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+</p>
+
+<p>It has several named parameters:</p>
+
+<ul>
+<li>username: The username to follow.</li>
+<li>show-count (optional): Number of followers label. Set to &ldquo;true&rdquo; it&rsquo;s shown otherwise <strong>not shown</strong>. Default not shown.</li>
+<li>show-name (optional): Show username in the button. Set to &ldquo;true&rdquo; it&rsquo;s shown otherwise <strong>not shown</strong>. Default not shown.</li>
+<li>large (optional): Show large button. Set to &ldquo;true&rdquo; show in large, otherwise in normal size.</li>
+</ul>
+
+<p>Optionally you can also used with the single required parameter (<code>username</code>) as a positional parameter.</p>
+
+<p><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%">  <span style="color: #000000; font-weight: bold">&lt;!</span><span style="color: #ce5c00; font-weight: bold">--</span> <span style="color: #000000">Twitter</span> <span style="color: #000000">large</span> <span style="color: #000000">size</span> <span style="color: #000000">button</span> <span style="color: #000000">showing</span> <span style="color: #000000">with</span> <span style="color: #000000">username</span><span style="color: #000000; font-weight: bold">,</span> <span style="color: #000000">number</span> <span style="color: #000000">of</span> <span style="color: #000000">followers</span><span style="color: #ce5c00; font-weight: bold">--</span><span style="color: #000000; font-weight: bold">&gt;</span>
+  <span style="color: #000000; font-weight: bold">{{&lt;</span><span style="color: #000000">twitter</span><span style="color: #ce5c00; font-weight: bold">-</span><span style="color: #000000">follow</span> <span style="color: #000000">username</span><span style="color: #000000; font-weight: bold">=</span><span style="color: #4e9a06">&quot;brody_berson&quot;</span> <span style="color: #000000">large</span><span style="color: #000000; font-weight: bold">=</span><span style="color: #4e9a06">&quot;true&quot;</span> <span style="color: #000000">show</span><span style="color: #ce5c00; font-weight: bold">-</span><span style="color: #000000">count</span><span style="color: #000000; font-weight: bold">=</span><span style="color: #4e9a06">&quot;true&quot;</span> <span style="color: #000000">show</span><span style="color: #ce5c00; font-weight: bold">-</span><span style="color: #000000">name</span><span style="color: #000000; font-weight: bold">=</span><span style="color: #4e9a06">&quot;true&quot;</span><span style="color: #000000; font-weight: bold">&gt;}}</span>
+
+  <span style="color: #000000; font-weight: bold">&lt;!</span><span style="color: #ce5c00; font-weight: bold">--</span> <span style="color: #000000">Twitter</span> <span style="color: #000000">standard</span> <span style="color: #000000">size</span> <span style="color: #000000">button</span> <span style="color: #000000">with</span> <span style="color: #000000">the</span> <span style="color: #000000">only</span> <span style="color: #000000">required</span> <span style="color: #000000">parameter</span> <span style="color: #ce5c00; font-weight: bold">--</span><span style="color: #000000; font-weight: bold">&gt;</span>
+  <span style="color: #000000; font-weight: bold">{{&lt;</span><span style="color: #000000">twitter</span><span style="color: #ce5c00; font-weight: bold">-</span><span style="color: #000000">follow</span> <span style="color: #000000">username</span><span style="color: #000000; font-weight: bold">=</span><span style="color: #4e9a06">&quot;brody_berson&quot;</span><span style="color: #000000; font-weight: bold">&gt;}}</span>
+
+  <span style="color: #000000; font-weight: bold">&lt;!</span><span style="color: #ce5c00; font-weight: bold">--</span> <span style="color: #000000">Using</span> <span style="color: #000000">it</span> <span style="color: #000000">with</span> <span style="color: #000000">the</span> <span style="color: #000000">positional</span> <span style="color: #000000">single</span> <span style="color: #000000">username</span> <span style="color: #000000">required</span> <span style="color: #000000">parameter</span> <span style="color: #ce5c00; font-weight: bold">--</span><span style="color: #000000; font-weight: bold">&gt;</span>
+  <span style="color: #000000; font-weight: bold">{{&lt;</span><span style="color: #000000">twitter</span><span style="color: #ce5c00; font-weight: bold">-</span><span style="color: #000000">follow</span> <span style="color: #4e9a06">&quot;ifraixedes&quot;</span><span style="color: #000000; font-weight: bold">&gt;}}</span>
+</pre></div>
+</p>
+
+<h2 id="twitter-hashtag-button:89e43e7b944c916f0e4ced1926fc907b">Twitter hashtag button</h2>
+
+<p>Render a Twitter hashtag button, like 
+  <a href="https://twitter.com/intent/tweet?button_hashtag=hugo&text=Hugo%20resources" class="twitter-hashtag-button"   data-hashtags="blog,golang" data-url="http://ivan.fraixed.es/hugo-resources/social-sharing/">Tweet #hugo</a>
+  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+
+</p>
+
+<p>It has several named parameters:</p>
+
+<ul>
+<li>hashtag: The hashtag, without &lsquo;#&rsquo;, to populate in the tweet.</li>
+<li>hashtags (optional): A comma-separated list of additional hashtags omitting preceding &lsquo;#&rsquo; from each one. Default none.</li>
+<li>text (optional): The extra text to populate in the tweet. Default none.</li>
+<li>related (optional): Related additional usernames with an optional description, <a href="https://dev.twitter.com/web/tweet-button/web-intent">read documentation about in twitter docs</a>. Default none.</li>
+<li>url (optional): The url to reference. Default to <code>page URL</code>.</li>
+<li>large (optional): Show large button. Set to &ldquo;true&rdquo; show in large, otherwise in normal size.</li>
+</ul>
+
+<p>Optionally you can also used with the single required parameter (<code>hashtag</code>) as a positional parameter.</p>
+
+<p><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%">  <span style="color: #000000; font-weight: bold">&lt;!</span><span style="color: #ce5c00; font-weight: bold">--</span> <span style="color: #000000">Twitter</span> <span style="color: #000000">button</span> <span style="color: #000000">with</span> <span style="color: #000000">populated</span> <span style="color: #000000">text</span><span style="color: #000000; font-weight: bold">,</span> <span style="color: #000000">additional</span> <span style="color: #000000">hashtags</span> <span style="color: #000000">and</span> <span style="color: #000000">related</span> <span style="color: #000000">information</span> <span style="color: #ce5c00; font-weight: bold">--</span><span style="color: #000000; font-weight: bold">&gt;</span>
+ <span style="color: #000000; font-weight: bold">{{&lt;</span><span style="color: #000000">twitter</span><span style="color: #ce5c00; font-weight: bold">-</span><span style="color: #000000">hashtag</span> <span style="color: #000000">hashtag</span><span style="color: #000000; font-weight: bold">=</span><span style="color: #4e9a06">&quot;hugo&quot;</span> <span style="color: #000000">text</span><span style="color: #000000; font-weight: bold">=</span><span style="color: #4e9a06">&quot;Hugo resources&quot;</span> <span style="color: #000000">hashtags</span><span style="color: #000000; font-weight: bold">=</span><span style="color: #4e9a06">&quot;blog,golang&quot;</span> <span style="color: #000000">related</span><span style="color: #000000; font-weight: bold">=</span><span style="color: #4e9a06">&quot;#golang&quot;</span><span style="color: #000000; font-weight: bold">&gt;}}</span>
+
+  <span style="color: #000000; font-weight: bold">&lt;!</span><span style="color: #ce5c00; font-weight: bold">--</span> <span style="color: #000000">Twitter</span> <span style="color: #000000">button</span> <span style="color: #000000">with</span> <span style="color: #000000">the</span> <span style="color: #000000">only</span> <span style="color: #000000">required</span> <span style="color: #000000">parameter</span> <span style="color: #ce5c00; font-weight: bold">--</span><span style="color: #000000; font-weight: bold">&gt;</span>
+  <span style="color: #000000; font-weight: bold">{{&lt;</span><span style="color: #000000">twitter</span><span style="color: #ce5c00; font-weight: bold">-</span><span style="color: #000000">hashtag</span> <span style="color: #000000">hashtag</span><span style="color: #000000; font-weight: bold">=</span><span style="color: #4e9a06">&quot;hugo&quot;</span><span style="color: #000000; font-weight: bold">&gt;}}</span>
+
+  <span style="color: #000000; font-weight: bold">&lt;!</span><span style="color: #ce5c00; font-weight: bold">--</span> <span style="color: #000000">Using</span> <span style="color: #000000">it</span> <span style="color: #000000">with</span> <span style="color: #000000">the</span> <span style="color: #000000">positional</span> <span style="color: #000000">single</span> <span style="color: #000000">hashtag</span> <span style="color: #000000">required</span> <span style="color: #000000">parameter</span> <span style="color: #ce5c00; font-weight: bold">--</span><span style="color: #000000; font-weight: bold">&gt;</span>
+  <span style="color: #000000; font-weight: bold">{{&lt;</span><span style="color: #000000">twitter</span><span style="color: #ce5c00; font-weight: bold">-</span><span style="color: #000000">hashtag</span> <span style="color: #4e9a06">&quot;hugo&quot;</span><span style="color: #000000; font-weight: bold">&gt;}}</span>
+</pre></div>
+</p>
+
+<h2 id="twitter-mention-button:89e43e7b944c916f0e4ced1926fc907b">Twitter mention button</h2>
+
+<p>Render a Twitter mention button, like 
+  <a href="https://twitter.com/intent/tweet?screen_name=ifraixedes&text=Hugo%20resources" data-url="http://ivan.fraixed.es/hugo-resources/social-sharing/" class="twitter-mention-button" data-hashtags="hugo"  data-related="golang">Tweet to @ifraixedes</a>
+  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+
+</p>
+
+<p>It has several named parameters:</p>
+
+<ul>
+<li>username: The username to mention.</li>
+<li>hashtags (optional): A comma-separated list of additional hashtags omitting preceding &lsquo;#&rsquo; from each one. Default none.</li>
+<li>text (optional): The extra text to populate in the tweet. Default none.</li>
+<li>related (optional): Related additional usernames with an optional description, <a href="https://dev.twitter.com/web/tweet-button/web-intent">read documentation about in twitter docs</a>. Default none.</li>
+<li>url (optional): The url to reference. Default to <code>page URL</code>.</li>
+<li>large (optional): Show large button. Set to &ldquo;true&rdquo; show in large, otherwise in normal size.</li>
+</ul>
+
+<p>Optionally you can also used with the single required parameter (<code>username</code>) as a positional parameter.</p>
+
+<p><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%">  <span style="color: #000000; font-weight: bold">&lt;!</span><span style="color: #ce5c00; font-weight: bold">--</span> <span style="color: #000000">Twitter</span> <span style="color: #000000">button</span> <span style="color: #000000">with</span> <span style="color: #000000">populated</span> <span style="color: #000000">text</span> <span style="color: #000000">and</span> <span style="color: #000000">related</span> <span style="color: #000000">usernames</span> <span style="color: #ce5c00; font-weight: bold">--</span><span style="color: #000000; font-weight: bold">&gt;</span>
+ <span style="color: #000000; font-weight: bold">{{&lt;</span><span style="color: #000000">twitter</span><span style="color: #ce5c00; font-weight: bold">-</span><span style="color: #000000">mention</span> <span style="color: #000000">username</span><span style="color: #000000; font-weight: bold">=</span><span style="color: #4e9a06">&quot;brody_berson&quot;</span> <span style="color: #000000">text</span><span style="color: #000000; font-weight: bold">=</span><span style="color: #4e9a06">&quot;Hugo resources&quot;</span> <span style="color: #000000">related</span><span style="color: #000000; font-weight: bold">=</span><span style="color: #4e9a06">&quot;golang&quot;</span><span style="color: #000000; font-weight: bold">&gt;}}</span>
+
+  <span style="color: #000000; font-weight: bold">&lt;!</span><span style="color: #ce5c00; font-weight: bold">--</span> <span style="color: #000000">Twitter</span> <span style="color: #000000">button</span> <span style="color: #000000">with</span> <span style="color: #000000">the</span> <span style="color: #000000">only</span> <span style="color: #000000">required</span> <span style="color: #000000">parameter</span> <span style="color: #ce5c00; font-weight: bold">--</span><span style="color: #000000; font-weight: bold">&gt;</span>
+  <span style="color: #000000; font-weight: bold">{{&lt;</span><span style="color: #000000">twitter</span><span style="color: #ce5c00; font-weight: bold">-</span><span style="color: #000000">mention</span> <span style="color: #000000">username</span><span style="color: #000000; font-weight: bold">=</span><span style="color: #4e9a06">&quot;brody_berson&quot;</span><span style="color: #000000; font-weight: bold">&gt;}}</span>
+
+  <span style="color: #000000; font-weight: bold">&lt;!</span><span style="color: #ce5c00; font-weight: bold">--</span> <span style="color: #000000">Using</span> <span style="color: #000000">it</span> <span style="color: #000000">with</span> <span style="color: #000000">the</span> <span style="color: #000000">positional</span> <span style="color: #000000">single</span> <span style="color: #000000">username</span> <span style="color: #000000">required</span> <span style="color: #000000">parameter</span> <span style="color: #ce5c00; font-weight: bold">--</span><span style="color: #000000; font-weight: bold">&gt;</span>
+  <span style="color: #000000; font-weight: bold">{{&lt;</span><span style="color: #000000">twitter</span><span style="color: #ce5c00; font-weight: bold">-</span><span style="color: #000000">mention</span> <span style="color: #4e9a06">&quot;ifraixedes&quot;</span><span style="color: #000000; font-weight: bold">&gt;}}</span>
+</pre></div>
+</p>
+
+<h2 id="twitter-share-button:89e43e7b944c916f0e4ced1926fc907b">Twitter share button</h2>
+
+<p>Render a Twitter share button, like 
+  <a href="https://twitter.com/share" class="twitter-share-button" data-via="ifraixedes" data-text="A bunch of resource for hugo"   data-hashtags="hugo,golang" data-url="http://ivan.fraixed.es/hugo-resources/social-sharing/">>Tweet</a>
+  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+</p>
+
+<p>It has several named parameters:</p>
+
+<ul>
+<li>via: The twitter username to attribute the source of the tweet.</li>
+<li>hashtags (optional): A comma-separated list of additional hashtags omitting preceding &lsquo;#&rsquo; from each one. Default none.</li>
+<li>text (optional): The extra text to populate in the tweet. Default none.</li>
+<li>url (optional): The url to reference. Default to <code>page URL</code>.</li>
+<li>related (optional): Related additional usernames with an optional description, <a href="https://dev.twitter.com/web/tweet-button/web-intent">read documentation about in twitter docs</a>. Default none.</li>
+<li>large (optional): Show large button. Set to &ldquo;true&rdquo; show in large, otherwise in normal size.</li>
+</ul>
+
+<p>Optionally you can also used with the single required parameter (<code>via</code>) as a positional parameter.</p>
+
+<p><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%">  <span style="color: #000000; font-weight: bold">&lt;!</span><span style="color: #ce5c00; font-weight: bold">--</span> <span style="color: #000000">Twitter</span> <span style="color: #000000">button</span> <span style="color: #000000">with</span> <span style="color: #000000">populated</span> <span style="color: #000000">text</span> <span style="color: #000000">and</span> <span style="color: #000000">hashtags</span> <span style="color: #ce5c00; font-weight: bold">--</span><span style="color: #000000; font-weight: bold">&gt;</span>
+ <span style="color: #000000; font-weight: bold">{{&lt;</span><span style="color: #000000">twitter</span><span style="color: #ce5c00; font-weight: bold">-</span><span style="color: #000000">share</span> <span style="color: #000000">via</span><span style="color: #000000; font-weight: bold">=</span><span style="color: #4e9a06">&quot;ifraixedes&quot;</span> <span style="color: #000000">text</span><span style="color: #000000; font-weight: bold">=</span><span style="color: #4e9a06">&quot;Hugo resources&quot;</span> <span style="color: #000000">hashtags</span><span style="color: #000000; font-weight: bold">=</span><span style="color: #4e9a06">&quot;hugo,golang&quot;</span><span style="color: #000000; font-weight: bold">&gt;}}</span>
+
+  <span style="color: #000000; font-weight: bold">&lt;!</span><span style="color: #ce5c00; font-weight: bold">--</span> <span style="color: #000000">Twitter</span> <span style="color: #000000">button</span> <span style="color: #000000">with</span> <span style="color: #000000">the</span> <span style="color: #000000">only</span> <span style="color: #000000">required</span> <span style="color: #000000">parameter</span> <span style="color: #ce5c00; font-weight: bold">--</span><span style="color: #000000; font-weight: bold">&gt;</span>
+  <span style="color: #000000; font-weight: bold">{{&lt;</span><span style="color: #000000">twitter</span><span style="color: #ce5c00; font-weight: bold">-</span><span style="color: #000000">share</span> <span style="color: #000000">via</span><span style="color: #000000; font-weight: bold">=</span><span style="color: #4e9a06">&quot;brody_berson&quot;</span><span style="color: #000000; font-weight: bold">&gt;}}</span>
+
+  <span style="color: #000000; font-weight: bold">&lt;!</span><span style="color: #ce5c00; font-weight: bold">--</span> <span style="color: #000000">Using</span> <span style="color: #000000">it</span> <span style="color: #000000">with</span> <span style="color: #000000">the</span> <span style="color: #000000">positional</span> <span style="color: #000000">single</span> <span style="color: #000000">via</span> <span style="color: #000000">required</span> <span style="color: #000000">parameter</span> <span style="color: #ce5c00; font-weight: bold">--</span><span style="color: #000000; font-weight: bold">&gt;</span>
+  <span style="color: #000000; font-weight: bold">{{&lt;</span><span style="color: #000000">twitter</span><span style="color: #ce5c00; font-weight: bold">-</span><span style="color: #000000">share</span> <span style="color: #4e9a06">&quot;ifraixedes&quot;</span><span style="color: #000000; font-weight: bold">&gt;}}</span>
+</pre></div>
+</p>
+
+</body>
+</html>

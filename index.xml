@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hugo Resources</title>
+    <link>http://ivan.fraixed.es/hugo-resources/</link>
+    <description>Recent content on Hugo Resources</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 10 Dec 2015 08:20:31 +0000</lastBuildDate>
+    <atom:link href="http://ivan.fraixed.es/hugo-resources/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Social Sharing Shortcodes</title>
+      <link>http://ivan.fraixed.es/hugo-resources/social-sharing/</link>
+      <pubDate>Thu, 10 Dec 2015 08:20:31 +0000</pubDate>
+      
+      <guid>http://ivan.fraixed.es/hugo-resources/social-sharing/</guid>
+      <description>
+
+&lt;p&gt;In this page you can see the available social sharing shortcodes showing a live example and code sample.&lt;/p&gt;
+
+&lt;h2 id=&#34;facebook-share-button:89e43e7b944c916f0e4ced1926fc907b&#34;&gt;Facebook share button&lt;/h2&gt;
+
+&lt;p&gt;Render a Facebook share button, like 
+&lt;div id=&#34;fb-root&#34;&gt;&lt;/div&gt;
+&lt;script&gt;(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = &#34;//connect.facebook.net/en_US/all.js#xfbml=1&#34;;
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, &#39;script&#39;, &#39;facebook-jssdk&#39;));&lt;/script&gt;
+
+
+&lt;div class=&#34;fb-share-button&#34; data-href=&#34;example.com&#34;data-layout=&#34;button_count&#34;&gt;&lt;/div&gt;
+&lt;/p&gt;
+
+&lt;p&gt;It has only one positional parameter and is optional; the default is &lt;code&gt;page URL&lt;/code&gt; value.&lt;/p&gt;
+
+&lt;div class=&#34;highlight&#34; style=&#34;background: #f8f8f8&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;  &lt;span style=&#34;color: #000000; font-weight: bold&#34;&gt;&amp;lt;!&lt;/span&gt;&lt;span style=&#34;color: #ce5c00; font-weight: bold&#34;&gt;--&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;No&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;parameter&lt;/span&gt;&lt;span style=&#34;color: #000000; font-weight: bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;so&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;the&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;page&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;url&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;will&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;be&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;used&lt;/span&gt;&lt;span style=&#34;color: #ce5c00; font-weight: bold&#34;&gt;--&lt;/span&gt;&lt;span style=&#34;color: #000000; font-weight: bold&#34;&gt;&amp;gt;&lt;/span&gt;
+  &lt;span style=&#34;color: #000000; font-weight: bold&#34;&gt;{{&amp;lt;&lt;/span&gt;&lt;span style=&#34;color: #000000&#34;&gt;facebook&lt;/span&gt;&lt;span style=&#34;color: #ce5c00; font-weight: bold&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color: #000000&#34;&gt;share&lt;/span&gt;&lt;span style=&#34;color: #000000; font-weight: bold&#34;&gt;&amp;gt;}}&lt;/span&gt;
+
+  &lt;span style=&#34;color: #000000; font-weight: bold&#34;&gt;&amp;lt;!&lt;/span&gt;&lt;span style=&#34;color: #ce5c00; font-weight: bold&#34;&gt;--&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;Using&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;the&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;url&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;passed&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;as&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;a&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;parameter&lt;/span&gt;  &lt;span style=&#34;color: #ce5c00; font-weight: bold&#34;&gt;--&lt;/span&gt;&lt;span style=&#34;color: #000000; font-weight: bold&#34;&gt;&amp;gt;&lt;/span&gt;
+  &lt;span style=&#34;color: #000000; font-weight: bold&#34;&gt;{{&amp;lt;&lt;/span&gt;&lt;span style=&#34;color: #000000&#34;&gt;facebook&lt;/span&gt;&lt;span style=&#34;color: #ce5c00; font-weight: bold&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color: #000000&#34;&gt;share&lt;/span&gt; &lt;span style=&#34;color: #4e9a06&#34;&gt;&amp;quot;http://example.com&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #000000; font-weight: bold&#34;&gt;&amp;gt;}}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2 id=&#34;pinterest-follow-button:89e43e7b944c916f0e4ced1926fc907b&#34;&gt;Pinterest follow button&lt;/h2&gt;
+
+&lt;p&gt;Render a Pinterest follow button, like 
+  &lt;a data-pin-do=&#34;buttonFollow&#34; href=&#34;https://www.pinterest.com/ifraixedes/&#34;&gt;Ivan Fraixedes&lt;/a&gt;
+  &lt;script async defer src=&#34;//assets.pinterest.com/js/pinit.js&#34;&gt;&lt;/script&gt;
+
+&lt;/p&gt;
+
+&lt;p&gt;It has several named parameters:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;username: The username to follow.&lt;/li&gt;
+&lt;li&gt;fullname (optional): The text to use inside the button; it uses &amp;ldquo;username&amp;rdquo; parameters by default.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Optionally you can also used with the single required parameter (&lt;code&gt;username&lt;/code&gt;) as a positional parameter.&lt;/p&gt;
+
+&lt;div class=&#34;highlight&#34; style=&#34;background: #f8f8f8&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;  &lt;span style=&#34;color: #000000; font-weight: bold&#34;&gt;&amp;lt;!&lt;/span&gt;&lt;span style=&#34;color: #ce5c00; font-weight: bold&#34;&gt;--&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;Using&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;only&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;username&lt;/span&gt; &lt;span style=&#34;color: #ce5c00; font-weight: bold&#34;&gt;--&lt;/span&gt;&lt;span style=&#34;color: #000000; font-weight: bold&#34;&gt;&amp;gt;&lt;/span&gt;
+  &lt;span style=&#34;color: #000000; font-weight: bold&#34;&gt;{{&amp;lt;&lt;/span&gt;&lt;span style=&#34;color: #000000&#34;&gt;pinterest&lt;/span&gt;&lt;span style=&#34;color: #ce5c00; font-weight: bold&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color: #000000&#34;&gt;follow&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;username&lt;/span&gt;&lt;span style=&#34;color: #000000; font-weight: bold&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color: #4e9a06&#34;&gt;&amp;quot;ifraixedes&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #000000; font-weight: bold&#34;&gt;&amp;gt;}}&lt;/span&gt;
+
+  &lt;span style=&#34;color: #000000; font-weight: bold&#34;&gt;&amp;lt;!&lt;/span&gt;&lt;span style=&#34;color: #ce5c00; font-weight: bold&#34;&gt;--&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;Using&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;the&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;url&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;passed&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;as&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;a&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;parameter&lt;/span&gt;  &lt;span style=&#34;color: #ce5c00; font-weight: bold&#34;&gt;--&lt;/span&gt;&lt;span style=&#34;color: #000000; font-weight: bold&#34;&gt;&amp;gt;&lt;/span&gt;
+  &lt;span style=&#34;color: #000000; font-weight: bold&#34;&gt;{{&amp;lt;&lt;/span&gt;&lt;span style=&#34;color: #000000&#34;&gt;pinterest&lt;/span&gt;&lt;span style=&#34;color: #ce5c00; font-weight: bold&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color: #000000&#34;&gt;follow&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;username&lt;/span&gt;&lt;span style=&#34;color: #000000; font-weight: bold&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color: #4e9a06&#34;&gt;&amp;quot;golang&amp;quot;&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;fullname&lt;/span&gt;&lt;span style=&#34;color: #000000; font-weight: bold&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color: #4e9a06&#34;&gt;&amp;quot;Go&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #000000; font-weight: bold&#34;&gt;&amp;gt;}}&lt;/span&gt;
+
+  &lt;span style=&#34;color: #000000; font-weight: bold&#34;&gt;&amp;lt;!&lt;/span&gt;&lt;span style=&#34;color: #ce5c00; font-weight: bold&#34;&gt;--&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;Using&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;it&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;with&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;the&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;positional&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;single&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;username&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;required&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;parameter&lt;/span&gt; &lt;span style=&#34;color: #ce5c00; font-weight: bold&#34;&gt;--&lt;/span&gt;&lt;span style=&#34;color: #000000; font-weight: bold&#34;&gt;&amp;gt;&lt;/span&gt;
+  &lt;span style=&#34;color: #000000; font-weight: bold&#34;&gt;{{&amp;lt;&lt;/span&gt;&lt;span style=&#34;color: #000000&#34;&gt;pinterest&lt;/span&gt;&lt;span style=&#34;color: #ce5c00; font-weight: bold&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color: #000000&#34;&gt;follow&lt;/span&gt; &lt;span style=&#34;color: #4e9a06&#34;&gt;&amp;quot;golang&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #000000; font-weight: bold&#34;&gt;&amp;gt;}}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2 id=&#34;pinterest-pin-it-button:89e43e7b944c916f0e4ced1926fc907b&#34;&gt;Pinterest pin it button&lt;/h2&gt;
+
+&lt;p&gt;Render a Pinterest pin it button, like 
+  &lt;a data-pin-do=&#34;buttonPin&#34;  href=&#34;https://www.pinterest.com/pin/create/button/?url=http%3a%2f%2fivan.fraixed.es%2fhugo-resources%2fsocial-sharing%2f&amp;media=https%3a%2f%2fgohugo.io%2fimg%2fhugo.png&amp;description=Social%20Sharing%20Shortcodes -- Hugo%20Resources&#34; data-pin-color=&#34;red&#34;&gt;&lt;/a&gt;
+  &lt;script async defer src=&#34;//assets.pinterest.com/js/pinit.js&#34;&gt;&lt;/script&gt;
+
+&lt;/p&gt;
+
+&lt;p&gt;It has several named parameters:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;media: The absolute URL to the image to pin.&lt;/li&gt;
+&lt;li&gt;url (optional): The absolute URL to pages which contains the image to pin. Default is &lt;code&gt;page URL&lt;/code&gt; value.&lt;/li&gt;
+&lt;li&gt;large (optional): Use a large button. Default is &lt;code&gt;false&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;description (optional): The description for the image to pin. Default to string composed by &lt;code&gt;page title - site title&lt;/code&gt; if they aren&amp;rsquo;t equal otherwise &lt;code&gt;page title&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;color (optional): The color of the button that Pinterest has available. Default to &lt;code&gt;red&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Optionally you can also used with the single required parameter (&lt;code&gt;media&lt;/code&gt;) as a positional parameter.&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;highlight&#34; style=&#34;background: #f8f8f8&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;  &lt;span style=&#34;color: #000000; font-weight: bold&#34;&gt;&amp;lt;!&lt;/span&gt;&lt;span style=&#34;color: #ce5c00; font-weight: bold&#34;&gt;--&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;Using&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;lage&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;button&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;an&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;description&lt;/span&gt; &lt;span style=&#34;color: #ce5c00; font-weight: bold&#34;&gt;--&lt;/span&gt;&lt;span style=&#34;color: #000000; font-weight: bold&#34;&gt;&amp;gt;&lt;/span&gt;
+  &lt;span style=&#34;color: #000000; font-weight: bold&#34;&gt;{{&amp;lt;&lt;/span&gt;&lt;span style=&#34;color: #000000&#34;&gt;pinterest&lt;/span&gt;&lt;span style=&#34;color: #ce5c00; font-weight: bold&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color: #000000&#34;&gt;pinit&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;media&lt;/span&gt;&lt;span style=&#34;color: #000000; font-weight: bold&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color: #4e9a06&#34;&gt;&amp;quot;https://gohugo.io/img/hugo.png&amp;quot;&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;large&lt;/span&gt;&lt;span style=&#34;color: #000000; font-weight: bold&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color: #4e9a06&#34;&gt;&amp;quot;true&amp;quot;&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;description&lt;/span&gt;&lt;span style=&#34;color: #000000; font-weight: bold&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color: #4e9a06&#34;&gt;&amp;quot;This an example of a hugo shortcode for Pinterest Pin Button&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #000000; font-weight: bold&#34;&gt;&amp;gt;}}&lt;/span&gt;
+
+  &lt;span style=&#34;color: #000000; font-weight: bold&#34;&gt;&amp;lt;!&lt;/span&gt;&lt;span style=&#34;color: #ce5c00; font-weight: bold&#34;&gt;--&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;Changing&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;the&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;color&lt;/span&gt;  &lt;span style=&#34;color: #ce5c00; font-weight: bold&#34;&gt;--&lt;/span&gt;&lt;span style=&#34;color: #000000; font-weight: bold&#34;&gt;&amp;gt;&lt;/span&gt;
+  &lt;span style=&#34;color: #000000; font-weight: bold&#34;&gt;{{&amp;lt;&lt;/span&gt;&lt;span style=&#34;color: #000000&#34;&gt;pinterest&lt;/span&gt;&lt;span style=&#34;color: #ce5c00; font-weight: bold&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color: #000000&#34;&gt;pinit&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;media&lt;/span&gt;&lt;span style=&#34;color: #000000; font-weight: bold&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color: #4e9a06&#34;&gt;&amp;quot;https://gohugo.io/img/hugo.png&amp;quot;&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;color&lt;/span&gt;&lt;span style=&#34;color: #000000; font-weight: bold&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color: #4e9a06&#34;&gt;&amp;quot;grey&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #000000; font-weight: bold&#34;&gt;&amp;gt;}}&lt;/span&gt;
+
+  &lt;span style=&#34;color: #000000; font-weight: bold&#34;&gt;&amp;lt;!&lt;/span&gt;&lt;span style=&#34;color: #ce5c00; font-weight: bold&#34;&gt;--&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;Using&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;it&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;with&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;the&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;positional&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;single&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;media&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;required&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;parameter&lt;/span&gt; &lt;span style=&#34;color: #ce5c00; font-weight: bold&#34;&gt;--&lt;/span&gt;&lt;span style=&#34;color: #000000; font-weight: bold&#34;&gt;&amp;gt;&lt;/span&gt;
+  &lt;span style=&#34;color: #000000; font-weight: bold&#34;&gt;{{&amp;lt;&lt;/span&gt;&lt;span style=&#34;color: #000000&#34;&gt;pinterest&lt;/span&gt;&lt;span style=&#34;color: #ce5c00; font-weight: bold&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color: #000000&#34;&gt;pinit&lt;/span&gt; &lt;span style=&#34;color: #4e9a06&#34;&gt;&amp;quot;https://gohugo.io/img/hugo.png&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #000000; font-weight: bold&#34;&gt;&amp;gt;}}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/p&gt;
+
+&lt;h2 id=&#34;twitter-follow-button:89e43e7b944c916f0e4ced1926fc907b&#34;&gt;Twitter follow button&lt;/h2&gt;
+
+&lt;p&gt;Render a Twitter button, like 
+  &lt;a href=&#34;https://twitter.com/brody_berson&#34; class=&#34;twitter-follow-button&#34; data-show-count=&#34;true&#34; data-show-screen-name=&#34;true&#34; data-size=&#34;large&#34;&gt;Follow @brody_berson&lt;/a&gt;
+  &lt;script&gt;!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?&#39;http&#39;:&#39;https&#39;;if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+&#39;://platform.twitter.com/widgets.js&#39;;fjs.parentNode.insertBefore(js,fjs);}}(document, &#39;script&#39;, &#39;twitter-wjs&#39;);&lt;/script&gt;
+
+&lt;/p&gt;
+
+&lt;p&gt;It has several named parameters:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;username: The username to follow.&lt;/li&gt;
+&lt;li&gt;show-count (optional): Number of followers label. Set to &amp;ldquo;true&amp;rdquo; it&amp;rsquo;s shown otherwise &lt;strong&gt;not shown&lt;/strong&gt;. Default not shown.&lt;/li&gt;
+&lt;li&gt;show-name (optional): Show username in the button. Set to &amp;ldquo;true&amp;rdquo; it&amp;rsquo;s shown otherwise &lt;strong&gt;not shown&lt;/strong&gt;. Default not shown.&lt;/li&gt;
+&lt;li&gt;large (optional): Show large button. Set to &amp;ldquo;true&amp;rdquo; show in large, otherwise in normal size.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Optionally you can also used with the single required parameter (&lt;code&gt;username&lt;/code&gt;) as a positional parameter.&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;highlight&#34; style=&#34;background: #f8f8f8&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;  &lt;span style=&#34;color: #000000; font-weight: bold&#34;&gt;&amp;lt;!&lt;/span&gt;&lt;span style=&#34;color: #ce5c00; font-weight: bold&#34;&gt;--&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;Twitter&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;large&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;size&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;button&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;showing&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;with&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;username&lt;/span&gt;&lt;span style=&#34;color: #000000; font-weight: bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;number&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;of&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;followers&lt;/span&gt;&lt;span style=&#34;color: #ce5c00; font-weight: bold&#34;&gt;--&lt;/span&gt;&lt;span style=&#34;color: #000000; font-weight: bold&#34;&gt;&amp;gt;&lt;/span&gt;
+  &lt;span style=&#34;color: #000000; font-weight: bold&#34;&gt;{{&amp;lt;&lt;/span&gt;&lt;span style=&#34;color: #000000&#34;&gt;twitter&lt;/span&gt;&lt;span style=&#34;color: #ce5c00; font-weight: bold&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color: #000000&#34;&gt;follow&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;username&lt;/span&gt;&lt;span style=&#34;color: #000000; font-weight: bold&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color: #4e9a06&#34;&gt;&amp;quot;brody_berson&amp;quot;&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;large&lt;/span&gt;&lt;span style=&#34;color: #000000; font-weight: bold&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color: #4e9a06&#34;&gt;&amp;quot;true&amp;quot;&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;show&lt;/span&gt;&lt;span style=&#34;color: #ce5c00; font-weight: bold&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color: #000000&#34;&gt;count&lt;/span&gt;&lt;span style=&#34;color: #000000; font-weight: bold&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color: #4e9a06&#34;&gt;&amp;quot;true&amp;quot;&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;show&lt;/span&gt;&lt;span style=&#34;color: #ce5c00; font-weight: bold&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color: #000000&#34;&gt;name&lt;/span&gt;&lt;span style=&#34;color: #000000; font-weight: bold&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color: #4e9a06&#34;&gt;&amp;quot;true&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #000000; font-weight: bold&#34;&gt;&amp;gt;}}&lt;/span&gt;
+
+  &lt;span style=&#34;color: #000000; font-weight: bold&#34;&gt;&amp;lt;!&lt;/span&gt;&lt;span style=&#34;color: #ce5c00; font-weight: bold&#34;&gt;--&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;Twitter&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;standard&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;size&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;button&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;with&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;the&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;only&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;required&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;parameter&lt;/span&gt; &lt;span style=&#34;color: #ce5c00; font-weight: bold&#34;&gt;--&lt;/span&gt;&lt;span style=&#34;color: #000000; font-weight: bold&#34;&gt;&amp;gt;&lt;/span&gt;
+  &lt;span style=&#34;color: #000000; font-weight: bold&#34;&gt;{{&amp;lt;&lt;/span&gt;&lt;span style=&#34;color: #000000&#34;&gt;twitter&lt;/span&gt;&lt;span style=&#34;color: #ce5c00; font-weight: bold&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color: #000000&#34;&gt;follow&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;username&lt;/span&gt;&lt;span style=&#34;color: #000000; font-weight: bold&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color: #4e9a06&#34;&gt;&amp;quot;brody_berson&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #000000; font-weight: bold&#34;&gt;&amp;gt;}}&lt;/span&gt;
+
+  &lt;span style=&#34;color: #000000; font-weight: bold&#34;&gt;&amp;lt;!&lt;/span&gt;&lt;span style=&#34;color: #ce5c00; font-weight: bold&#34;&gt;--&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;Using&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;it&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;with&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;the&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;positional&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;single&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;username&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;required&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;parameter&lt;/span&gt; &lt;span style=&#34;color: #ce5c00; font-weight: bold&#34;&gt;--&lt;/span&gt;&lt;span style=&#34;color: #000000; font-weight: bold&#34;&gt;&amp;gt;&lt;/span&gt;
+  &lt;span style=&#34;color: #000000; font-weight: bold&#34;&gt;{{&amp;lt;&lt;/span&gt;&lt;span style=&#34;color: #000000&#34;&gt;twitter&lt;/span&gt;&lt;span style=&#34;color: #ce5c00; font-weight: bold&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color: #000000&#34;&gt;follow&lt;/span&gt; &lt;span style=&#34;color: #4e9a06&#34;&gt;&amp;quot;ifraixedes&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #000000; font-weight: bold&#34;&gt;&amp;gt;}}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/p&gt;
+
+&lt;h2 id=&#34;twitter-hashtag-button:89e43e7b944c916f0e4ced1926fc907b&#34;&gt;Twitter hashtag button&lt;/h2&gt;
+
+&lt;p&gt;Render a Twitter hashtag button, like 
+  &lt;a href=&#34;https://twitter.com/intent/tweet?button_hashtag=hugo&amp;text=Hugo%20resources&#34; class=&#34;twitter-hashtag-button&#34;   data-hashtags=&#34;blog,golang&#34; data-url=&#34;http://ivan.fraixed.es/hugo-resources/social-sharing/&#34;&gt;Tweet #hugo&lt;/a&gt;
+  &lt;script&gt;!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?&#39;http&#39;:&#39;https&#39;;if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+&#39;://platform.twitter.com/widgets.js&#39;;fjs.parentNode.insertBefore(js,fjs);}}(document, &#39;script&#39;, &#39;twitter-wjs&#39;);&lt;/script&gt;
+
+
+&lt;/p&gt;
+
+&lt;p&gt;It has several named parameters:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;hashtag: The hashtag, without &amp;lsquo;#&amp;rsquo;, to populate in the tweet.&lt;/li&gt;
+&lt;li&gt;hashtags (optional): A comma-separated list of additional hashtags omitting preceding &amp;lsquo;#&amp;rsquo; from each one. Default none.&lt;/li&gt;
+&lt;li&gt;text (optional): The extra text to populate in the tweet. Default none.&lt;/li&gt;
+&lt;li&gt;related (optional): Related additional usernames with an optional description, &lt;a href=&#34;https://dev.twitter.com/web/tweet-button/web-intent&#34;&gt;read documentation about in twitter docs&lt;/a&gt;. Default none.&lt;/li&gt;
+&lt;li&gt;url (optional): The url to reference. Default to &lt;code&gt;page URL&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;large (optional): Show large button. Set to &amp;ldquo;true&amp;rdquo; show in large, otherwise in normal size.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Optionally you can also used with the single required parameter (&lt;code&gt;hashtag&lt;/code&gt;) as a positional parameter.&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;highlight&#34; style=&#34;background: #f8f8f8&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;  &lt;span style=&#34;color: #000000; font-weight: bold&#34;&gt;&amp;lt;!&lt;/span&gt;&lt;span style=&#34;color: #ce5c00; font-weight: bold&#34;&gt;--&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;Twitter&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;button&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;with&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;populated&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;text&lt;/span&gt;&lt;span style=&#34;color: #000000; font-weight: bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;additional&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;hashtags&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;and&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;related&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;information&lt;/span&gt; &lt;span style=&#34;color: #ce5c00; font-weight: bold&#34;&gt;--&lt;/span&gt;&lt;span style=&#34;color: #000000; font-weight: bold&#34;&gt;&amp;gt;&lt;/span&gt;
+ &lt;span style=&#34;color: #000000; font-weight: bold&#34;&gt;{{&amp;lt;&lt;/span&gt;&lt;span style=&#34;color: #000000&#34;&gt;twitter&lt;/span&gt;&lt;span style=&#34;color: #ce5c00; font-weight: bold&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color: #000000&#34;&gt;hashtag&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;hashtag&lt;/span&gt;&lt;span style=&#34;color: #000000; font-weight: bold&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color: #4e9a06&#34;&gt;&amp;quot;hugo&amp;quot;&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;text&lt;/span&gt;&lt;span style=&#34;color: #000000; font-weight: bold&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color: #4e9a06&#34;&gt;&amp;quot;Hugo resources&amp;quot;&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;hashtags&lt;/span&gt;&lt;span style=&#34;color: #000000; font-weight: bold&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color: #4e9a06&#34;&gt;&amp;quot;blog,golang&amp;quot;&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;related&lt;/span&gt;&lt;span style=&#34;color: #000000; font-weight: bold&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color: #4e9a06&#34;&gt;&amp;quot;#golang&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #000000; font-weight: bold&#34;&gt;&amp;gt;}}&lt;/span&gt;
+
+  &lt;span style=&#34;color: #000000; font-weight: bold&#34;&gt;&amp;lt;!&lt;/span&gt;&lt;span style=&#34;color: #ce5c00; font-weight: bold&#34;&gt;--&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;Twitter&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;button&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;with&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;the&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;only&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;required&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;parameter&lt;/span&gt; &lt;span style=&#34;color: #ce5c00; font-weight: bold&#34;&gt;--&lt;/span&gt;&lt;span style=&#34;color: #000000; font-weight: bold&#34;&gt;&amp;gt;&lt;/span&gt;
+  &lt;span style=&#34;color: #000000; font-weight: bold&#34;&gt;{{&amp;lt;&lt;/span&gt;&lt;span style=&#34;color: #000000&#34;&gt;twitter&lt;/span&gt;&lt;span style=&#34;color: #ce5c00; font-weight: bold&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color: #000000&#34;&gt;hashtag&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;hashtag&lt;/span&gt;&lt;span style=&#34;color: #000000; font-weight: bold&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color: #4e9a06&#34;&gt;&amp;quot;hugo&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #000000; font-weight: bold&#34;&gt;&amp;gt;}}&lt;/span&gt;
+
+  &lt;span style=&#34;color: #000000; font-weight: bold&#34;&gt;&amp;lt;!&lt;/span&gt;&lt;span style=&#34;color: #ce5c00; font-weight: bold&#34;&gt;--&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;Using&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;it&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;with&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;the&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;positional&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;single&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;hashtag&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;required&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;parameter&lt;/span&gt; &lt;span style=&#34;color: #ce5c00; font-weight: bold&#34;&gt;--&lt;/span&gt;&lt;span style=&#34;color: #000000; font-weight: bold&#34;&gt;&amp;gt;&lt;/span&gt;
+  &lt;span style=&#34;color: #000000; font-weight: bold&#34;&gt;{{&amp;lt;&lt;/span&gt;&lt;span style=&#34;color: #000000&#34;&gt;twitter&lt;/span&gt;&lt;span style=&#34;color: #ce5c00; font-weight: bold&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color: #000000&#34;&gt;hashtag&lt;/span&gt; &lt;span style=&#34;color: #4e9a06&#34;&gt;&amp;quot;hugo&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #000000; font-weight: bold&#34;&gt;&amp;gt;}}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/p&gt;
+
+&lt;h2 id=&#34;twitter-mention-button:89e43e7b944c916f0e4ced1926fc907b&#34;&gt;Twitter mention button&lt;/h2&gt;
+
+&lt;p&gt;Render a Twitter mention button, like 
+  &lt;a href=&#34;https://twitter.com/intent/tweet?screen_name=ifraixedes&amp;text=Hugo%20resources&#34; data-url=&#34;http://ivan.fraixed.es/hugo-resources/social-sharing/&#34; class=&#34;twitter-mention-button&#34; data-hashtags=&#34;hugo&#34;  data-related=&#34;golang&#34;&gt;Tweet to @ifraixedes&lt;/a&gt;
+  &lt;script&gt;!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?&#39;http&#39;:&#39;https&#39;;if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+&#39;://platform.twitter.com/widgets.js&#39;;fjs.parentNode.insertBefore(js,fjs);}}(document, &#39;script&#39;, &#39;twitter-wjs&#39;);&lt;/script&gt;
+
+
+&lt;/p&gt;
+
+&lt;p&gt;It has several named parameters:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;username: The username to mention.&lt;/li&gt;
+&lt;li&gt;hashtags (optional): A comma-separated list of additional hashtags omitting preceding &amp;lsquo;#&amp;rsquo; from each one. Default none.&lt;/li&gt;
+&lt;li&gt;text (optional): The extra text to populate in the tweet. Default none.&lt;/li&gt;
+&lt;li&gt;related (optional): Related additional usernames with an optional description, &lt;a href=&#34;https://dev.twitter.com/web/tweet-button/web-intent&#34;&gt;read documentation about in twitter docs&lt;/a&gt;. Default none.&lt;/li&gt;
+&lt;li&gt;url (optional): The url to reference. Default to &lt;code&gt;page URL&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;large (optional): Show large button. Set to &amp;ldquo;true&amp;rdquo; show in large, otherwise in normal size.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Optionally you can also used with the single required parameter (&lt;code&gt;username&lt;/code&gt;) as a positional parameter.&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;highlight&#34; style=&#34;background: #f8f8f8&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;  &lt;span style=&#34;color: #000000; font-weight: bold&#34;&gt;&amp;lt;!&lt;/span&gt;&lt;span style=&#34;color: #ce5c00; font-weight: bold&#34;&gt;--&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;Twitter&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;button&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;with&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;populated&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;text&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;and&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;related&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;usernames&lt;/span&gt; &lt;span style=&#34;color: #ce5c00; font-weight: bold&#34;&gt;--&lt;/span&gt;&lt;span style=&#34;color: #000000; font-weight: bold&#34;&gt;&amp;gt;&lt;/span&gt;
+ &lt;span style=&#34;color: #000000; font-weight: bold&#34;&gt;{{&amp;lt;&lt;/span&gt;&lt;span style=&#34;color: #000000&#34;&gt;twitter&lt;/span&gt;&lt;span style=&#34;color: #ce5c00; font-weight: bold&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color: #000000&#34;&gt;mention&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;username&lt;/span&gt;&lt;span style=&#34;color: #000000; font-weight: bold&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color: #4e9a06&#34;&gt;&amp;quot;brody_berson&amp;quot;&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;text&lt;/span&gt;&lt;span style=&#34;color: #000000; font-weight: bold&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color: #4e9a06&#34;&gt;&amp;quot;Hugo resources&amp;quot;&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;related&lt;/span&gt;&lt;span style=&#34;color: #000000; font-weight: bold&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color: #4e9a06&#34;&gt;&amp;quot;golang&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #000000; font-weight: bold&#34;&gt;&amp;gt;}}&lt;/span&gt;
+
+  &lt;span style=&#34;color: #000000; font-weight: bold&#34;&gt;&amp;lt;!&lt;/span&gt;&lt;span style=&#34;color: #ce5c00; font-weight: bold&#34;&gt;--&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;Twitter&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;button&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;with&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;the&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;only&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;required&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;parameter&lt;/span&gt; &lt;span style=&#34;color: #ce5c00; font-weight: bold&#34;&gt;--&lt;/span&gt;&lt;span style=&#34;color: #000000; font-weight: bold&#34;&gt;&amp;gt;&lt;/span&gt;
+  &lt;span style=&#34;color: #000000; font-weight: bold&#34;&gt;{{&amp;lt;&lt;/span&gt;&lt;span style=&#34;color: #000000&#34;&gt;twitter&lt;/span&gt;&lt;span style=&#34;color: #ce5c00; font-weight: bold&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color: #000000&#34;&gt;mention&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;username&lt;/span&gt;&lt;span style=&#34;color: #000000; font-weight: bold&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color: #4e9a06&#34;&gt;&amp;quot;brody_berson&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #000000; font-weight: bold&#34;&gt;&amp;gt;}}&lt;/span&gt;
+
+  &lt;span style=&#34;color: #000000; font-weight: bold&#34;&gt;&amp;lt;!&lt;/span&gt;&lt;span style=&#34;color: #ce5c00; font-weight: bold&#34;&gt;--&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;Using&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;it&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;with&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;the&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;positional&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;single&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;username&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;required&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;parameter&lt;/span&gt; &lt;span style=&#34;color: #ce5c00; font-weight: bold&#34;&gt;--&lt;/span&gt;&lt;span style=&#34;color: #000000; font-weight: bold&#34;&gt;&amp;gt;&lt;/span&gt;
+  &lt;span style=&#34;color: #000000; font-weight: bold&#34;&gt;{{&amp;lt;&lt;/span&gt;&lt;span style=&#34;color: #000000&#34;&gt;twitter&lt;/span&gt;&lt;span style=&#34;color: #ce5c00; font-weight: bold&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color: #000000&#34;&gt;mention&lt;/span&gt; &lt;span style=&#34;color: #4e9a06&#34;&gt;&amp;quot;ifraixedes&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #000000; font-weight: bold&#34;&gt;&amp;gt;}}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/p&gt;
+
+&lt;h2 id=&#34;twitter-share-button:89e43e7b944c916f0e4ced1926fc907b&#34;&gt;Twitter share button&lt;/h2&gt;
+
+&lt;p&gt;Render a Twitter share button, like 
+  &lt;a href=&#34;https://twitter.com/share&#34; class=&#34;twitter-share-button&#34; data-via=&#34;ifraixedes&#34; data-text=&#34;A bunch of resource for hugo&#34;   data-hashtags=&#34;hugo,golang&#34; data-url=&#34;http://ivan.fraixed.es/hugo-resources/social-sharing/&#34;&gt;&gt;Tweet&lt;/a&gt;
+  &lt;script&gt;!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?&#39;http&#39;:&#39;https&#39;;if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+&#39;://platform.twitter.com/widgets.js&#39;;fjs.parentNode.insertBefore(js,fjs);}}(document, &#39;script&#39;, &#39;twitter-wjs&#39;);&lt;/script&gt;
+
+&lt;/p&gt;
+
+&lt;p&gt;It has several named parameters:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;via: The twitter username to attribute the source of the tweet.&lt;/li&gt;
+&lt;li&gt;hashtags (optional): A comma-separated list of additional hashtags omitting preceding &amp;lsquo;#&amp;rsquo; from each one. Default none.&lt;/li&gt;
+&lt;li&gt;text (optional): The extra text to populate in the tweet. Default none.&lt;/li&gt;
+&lt;li&gt;url (optional): The url to reference. Default to &lt;code&gt;page URL&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;related (optional): Related additional usernames with an optional description, &lt;a href=&#34;https://dev.twitter.com/web/tweet-button/web-intent&#34;&gt;read documentation about in twitter docs&lt;/a&gt;. Default none.&lt;/li&gt;
+&lt;li&gt;large (optional): Show large button. Set to &amp;ldquo;true&amp;rdquo; show in large, otherwise in normal size.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Optionally you can also used with the single required parameter (&lt;code&gt;via&lt;/code&gt;) as a positional parameter.&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;highlight&#34; style=&#34;background: #f8f8f8&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;  &lt;span style=&#34;color: #000000; font-weight: bold&#34;&gt;&amp;lt;!&lt;/span&gt;&lt;span style=&#34;color: #ce5c00; font-weight: bold&#34;&gt;--&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;Twitter&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;button&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;with&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;populated&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;text&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;and&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;hashtags&lt;/span&gt; &lt;span style=&#34;color: #ce5c00; font-weight: bold&#34;&gt;--&lt;/span&gt;&lt;span style=&#34;color: #000000; font-weight: bold&#34;&gt;&amp;gt;&lt;/span&gt;
+ &lt;span style=&#34;color: #000000; font-weight: bold&#34;&gt;{{&amp;lt;&lt;/span&gt;&lt;span style=&#34;color: #000000&#34;&gt;twitter&lt;/span&gt;&lt;span style=&#34;color: #ce5c00; font-weight: bold&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color: #000000&#34;&gt;share&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;via&lt;/span&gt;&lt;span style=&#34;color: #000000; font-weight: bold&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color: #4e9a06&#34;&gt;&amp;quot;ifraixedes&amp;quot;&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;text&lt;/span&gt;&lt;span style=&#34;color: #000000; font-weight: bold&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color: #4e9a06&#34;&gt;&amp;quot;Hugo resources&amp;quot;&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;hashtags&lt;/span&gt;&lt;span style=&#34;color: #000000; font-weight: bold&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color: #4e9a06&#34;&gt;&amp;quot;hugo,golang&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #000000; font-weight: bold&#34;&gt;&amp;gt;}}&lt;/span&gt;
+
+  &lt;span style=&#34;color: #000000; font-weight: bold&#34;&gt;&amp;lt;!&lt;/span&gt;&lt;span style=&#34;color: #ce5c00; font-weight: bold&#34;&gt;--&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;Twitter&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;button&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;with&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;the&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;only&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;required&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;parameter&lt;/span&gt; &lt;span style=&#34;color: #ce5c00; font-weight: bold&#34;&gt;--&lt;/span&gt;&lt;span style=&#34;color: #000000; font-weight: bold&#34;&gt;&amp;gt;&lt;/span&gt;
+  &lt;span style=&#34;color: #000000; font-weight: bold&#34;&gt;{{&amp;lt;&lt;/span&gt;&lt;span style=&#34;color: #000000&#34;&gt;twitter&lt;/span&gt;&lt;span style=&#34;color: #ce5c00; font-weight: bold&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color: #000000&#34;&gt;share&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;via&lt;/span&gt;&lt;span style=&#34;color: #000000; font-weight: bold&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color: #4e9a06&#34;&gt;&amp;quot;brody_berson&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #000000; font-weight: bold&#34;&gt;&amp;gt;}}&lt;/span&gt;
+
+  &lt;span style=&#34;color: #000000; font-weight: bold&#34;&gt;&amp;lt;!&lt;/span&gt;&lt;span style=&#34;color: #ce5c00; font-weight: bold&#34;&gt;--&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;Using&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;it&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;with&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;the&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;positional&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;single&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;via&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;required&lt;/span&gt; &lt;span style=&#34;color: #000000&#34;&gt;parameter&lt;/span&gt; &lt;span style=&#34;color: #ce5c00; font-weight: bold&#34;&gt;--&lt;/span&gt;&lt;span style=&#34;color: #000000; font-weight: bold&#34;&gt;&amp;gt;&lt;/span&gt;
+  &lt;span style=&#34;color: #000000; font-weight: bold&#34;&gt;{{&amp;lt;&lt;/span&gt;&lt;span style=&#34;color: #000000&#34;&gt;twitter&lt;/span&gt;&lt;span style=&#34;color: #ce5c00; font-weight: bold&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color: #000000&#34;&gt;share&lt;/span&gt; &lt;span style=&#34;color: #4e9a06&#34;&gt;&amp;quot;ifraixedes&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #000000; font-weight: bold&#34;&gt;&amp;gt;}}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
