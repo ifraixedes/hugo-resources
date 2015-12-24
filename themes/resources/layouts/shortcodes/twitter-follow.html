@@ -1,0 +1,7 @@
+{{if .IsNamedParams}}
+  <a href="https://twitter.com/{{.Get "username"}}" class="twitter-follow-button" data-show-count="{{if eq (.Get "show-count") "true"}}true{{else}}false{{end}}" data-show-screen-name="{{if eq (.Get "show-name") "true"}}true{{else}}false{{end}}" {{if eq (.Get "large") "true"}}data-size="large"{{end}}>Follow @{{.Get "username"}}</a>
+  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+{{else}}
+  <a href="https://twitter.com/{{.Get 0}}" class="twitter-follow-button" data-show-count="false" data-show-screen-name="false">Follow @{{.Get 0}}</a>
+  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+{{end}}
