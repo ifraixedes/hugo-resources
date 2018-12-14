@@ -13,7 +13,7 @@ To summarize, refer to the "themes/resources" directory to take the resource tha
 
 ## Documentation
 
-The documentation of the current resources is available in the Github pages of this repository which is location at: [ivan.fraixed.es/hugo-resources](http://ivan.fraixed.es/hugo-resources) and it's mentioned above, they are built with the Hugo site which sits in the root of this repository.
+The documentation of the current resources is available in the Github pages of this repository which is location at: [ifraixedes.github.io/hugo-resources](https://ifraixedes.github.io/hugo-resources/) and it's mentioned above, they are built with the Hugo site which sits in the root of this repository.
 
 ## Development
 
